@@ -55,6 +55,41 @@ figure figcaption h2{}
 figure figcaption h3{}
 /* Layout */
 
+.navegacion ul{
+  height: inherit; /*mide lo mismos que mide la nabehación*/
+  background-color: cornflowerblue;
+  border: 2px solid black;
+  width: max-content; /*respeta el tamaño de cada elemento*/
+  margin: auto; /*elemento que esta dentro lo deja en el centro, modifica los cuatro lados*/
+}
+
+
+.navegacion ul li {
+  display: inline;
+  padding: 20px;
+}
+
+
+.contenedor-banner{
+  display: flex; /*felxible al tamaño de la pantalla*/
+  flex-direction: row-reverse;
+}
+
+
+.contenedor h2 {
+  text-align: center;
+}
+.contenedor-banner div{
+  padding: 10px;
+  flex: 1;
+}
+.contenedor-banner img{
+    flex: 1;
+  width: 400px;
+  height: 225px;
+  object-fit:cover;
+}
+
 /* Componentes */
 
 /* Utilidades */
