@@ -58,7 +58,7 @@ picture {
   --clr-white: 0 0% 100%; */
   /* tipografia */
   --f-family: 'ANTON';
-  --f-size:100px;
+  --f-size:10px;
   --f-weight: 400;
 }
 /* Aplica estas variables a todos los elementos */
@@ -76,17 +76,55 @@ picture {
 .grid {
   display: grid
 }
+
 .contenedor {
-  width: 90vw;
-  margin-inline: auto;
-  background-image: url("./atardecer.jpg");
+  width: 100vw;
+  height: 100vh;
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: flex-end;
+  align-items: center;
+   background-image: url("./atardecer.jpg");
   background-size: cover;
-  height: 600px;
-  display: grid;
-place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .contenedor h2 {
+   --f-size:60px;
+  color: rgb(255, 255, 255);
+    padding: 10px;
 
-  background-color: rgba(158, 150, 137, 0.527);
+}
+.contenedor p {
+   --f-size:10px;
+   color: rgb(255, 255, 255);
+   padding: 10px;
+}
+.foto{
+ display: grid;
+ border: 3px solid rgb(240, 226, 233);
+ border-radius: 1rem;
+ overflow: hidden;
+
+}
+.foto .caja {
+position: relative;
+width: 100%;
+height:100% ;
+padding-top: 100%;
+
+}
+.foto .caja img{
+position: absolute;
+ width: 400%;
+ top: 0;
+  object-fit: cover;
+
+}
+.foto figcaption {
+
 
 }
